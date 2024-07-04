@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: "Baby Girly";
+    src: url(font/Baby\ Girly.ttf);
+}
+@font-face {
+    font-family: "cuerpo";
+    src: url(font/cuerpo.ttf);
+}
+
+@font-face {
+    font-family: "Grunge-Social-Media";
+    src: url(font/Grunge-Social-Media.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #9d6944;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-family: 'Baby Girly';
+    font-size: 3em;
+    color: #9d6944;
+    pointer-events: none;
+    margin-right: 250px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #9d6944;
+    padding: 6px 15 px;
+    border-radius: 30px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover{
+    background-color: #9d6944;
+    color: #f9f9f9;
+    height: auto;
+    padding: 2px 4px;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 122vh;
+}
+#cap1, #cap2, #cap3, #cap4, #cap5, #cap6{
+    font-family: 'Baby Girly';
+    letter-spacing: .1em;
+    font-weight: lighter;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #543310;
+    text-shadow: 2px 2px 15px rgb(255, 255, 255, 1);
+    top: 280px;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax #plant{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.historia{
+    top: -100px;
+    position: relative;
+    background: #352316;
+    padding: 150px;
+    text-align: center;
+    justify-content: center;
+}
+
+.historia h2{
+    font-size: 3em;
+    color: #f9f9f9;
+    margin-bottom: 150px;
+}
+
+.historia p{
+    font-family: 'cuerpo';
+    max-width: 70ch;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1em;
+    color: #f9f9f9;
+    font-weight: 300;
+    text-align: center;
+    text-align: justify;
+    line-height: 3;
+}
+
+.menu_lateral{
+    border-radius: 0px 30px 30px 0px;
+    height: 55%;
+    width: 60px;
+    position: fixed;
+    left: 0px;
+    top: 20%;
+    background-color: #F8C794;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.menu_lateral ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu_lateral ul li{
+    padding: 8px;
+    text-align: left;
+}
+
+.menu_lateral ul li a{
+    color: #635240;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+    margin-top: 3px;
+}
+
+.menu_lateral ul li a:hover{
+    background-color: #635240;
+    border-radius: 10px 10px;
+    color: #F8C794;
+}
+
+#img_1{
+    transform: translateX(-100%);
+    animation: slideInLeft 5s forwards infinite alternate;
+    }
+
+@keyframes slideInLeft{
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    }
+
+#img_2{
+    transform: translateX(100%);
+    animation: slideInRight 5s forwards infinite alternate;
+}
+
+@keyframes slideInRight{
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#img_3{
+    transform: scale(0);
+    animation: zoomIn1 5s forwards infinite alternate;
+}
+
+@keyframes zoomIn1{
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#img_4{
+    transform: translateX(-100%);
+    animation: slideInLeft 5s forwards infinite alternate;
+}
+
+@keyframes slideInLeft{
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#img_5{
+    transform: translateX(100%);
+    animation: slideInRight 5s forwards infinite alternate;
+}
+
+@keyframes slideInRight{
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#img_6{
+    transform: scale(0.5);
+    animation: zoomIn 5s forwards infinite alternate;
+}
+
+@keyframes zoomIn{
+    50%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: .5;
+    }
+}
+
+footer{
+    background-color: #9d6944;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+#derechos{
+    position: absolute;
+    top:8300px;
+    height: 100px;
+    left: 580px;
+}
+
